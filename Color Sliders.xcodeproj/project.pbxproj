@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A08C4AA2050B7C100834F11 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A08C4A72050B7C100834F11 /* Icon@2x.png */; };
+		0A08C4AB2050B7C100834F11 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A08C4A82050B7C100834F11 /* Icon-72.png */; };
+		0A08C4AC2050B7C100834F11 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A08C4A92050B7C100834F11 /* Icon.png */; };
+		0A28E5B22061620E00A32F50 /* ColorSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28E5B12061620E00A32F50 /* ColorSliderViewController.m */; };
 		0A35B5C0205095BA00573EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35B5BF205095BA00573EE3 /* AppDelegate.swift */; };
 		0A35B5C2205095BA00573EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35B5C1205095BA00573EE3 /* ViewController.swift */; };
 		0A35B5C5205095BA00573EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A35B5C3205095BA00573EE3 /* Main.storyboard */; };
@@ -15,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A08C4A72050B7C100834F11 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0A08C4A82050B7C100834F11 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0A08C4A92050B7C100834F11 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A28E5AF2061620E00A32F50 /* Color Sliders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Color Sliders-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A28E5B02061620E00A32F50 /* ColorSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSliderViewController.h; sourceTree = "<group>"; };
+		0A28E5B12061620E00A32F50 /* ColorSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSliderViewController.m; sourceTree = "<group>"; };
 		0A35B5BC205095BA00573EE3 /* Color Sliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Sliders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A35B5BF205095BA00573EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A35B5C1205095BA00573EE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +70,12 @@
 				0A35B5C6205095BA00573EE3 /* Assets.xcassets */,
 				0A35B5C8205095BA00573EE3 /* LaunchScreen.storyboard */,
 				0A35B5CB205095BA00573EE3 /* Info.plist */,
+				0A08C4A82050B7C100834F11 /* Icon-72.png */,
+				0A08C4A92050B7C100834F11 /* Icon.png */,
+				0A08C4A72050B7C100834F11 /* Icon@2x.png */,
+				0A28E5B02061620E00A32F50 /* ColorSliderViewController.h */,
+				0A28E5B12061620E00A32F50 /* ColorSliderViewController.m */,
+				0A28E5AF2061620E00A32F50 /* Color Sliders-Bridging-Header.h */,
 			);
 			path = "Color Sliders";
 			sourceTree = "<group>";
@@ -96,6 +112,7 @@
 				TargetAttributes = {
 					0A35B5BB205095BA00573EE3 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,7 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A08C4AC2050B7C100834F11 /* Icon.png in Resources */,
 				0A35B5CA205095BA00573EE3 /* LaunchScreen.storyboard in Resources */,
+				0A08C4AB2050B7C100834F11 /* Icon-72.png in Resources */,
+				0A08C4AA2050B7C100834F11 /* Icon@2x.png in Resources */,
 				0A35B5C7205095BA00573EE3 /* Assets.xcassets in Resources */,
 				0A35B5C5205095BA00573EE3 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A35B5C2205095BA00573EE3 /* ViewController.swift in Sources */,
+				0A28E5B22061620E00A32F50 /* ColorSliderViewController.m in Sources */,
 				0A35B5C0205095BA00573EE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Color Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.chakrap.Color-Sliders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Sliders/Color Sliders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Color Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rosehulman.chakrap.Color-Sliders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Sliders/Color Sliders-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
